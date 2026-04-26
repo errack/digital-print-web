@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel & Tinta | Impresión Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00b4d8;
+            --secondary: #90e0ef;
+            --dark: #03045e;
+            --light: #caf0f8;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; }
+        
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; top: 0; z-index: 1000;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(3, 4, 94, 0.7), rgba(3, 4, 94, 0.7)), 
+                        url('https://images.unsplash.com/photo-1562654501-a0ccc0af3fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .services { padding: 3rem 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        
+        .card {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .card:hover { transform: translateY(-10px); border-color: var(--primary); }
+        .card i { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+
+        footer { background: #222; color: white; text-align: center; padding: 2rem; }
+        
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>IMPRESION<span>DIGITAL</span></h1>
+    <nav>
+        <a href="#servicios" style="color:white; text-decoration:none;">Servicios</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Calidad que se nota, impresiones que impactan</h2>
+    <p>Expertos en gran formato, offset digital y promocionales.</p>
+    <a href="https://wa.me/tu-numero-aqui" class="btn">Cotizar por WhatsApp</a>
+</section>
+
+<section id="servicios" class="services">
+    <div class="card">
+        <i class="fas fa-print"></i>
+        <h3>Gran Formato</h3>
+        <p>Lonas, vinilos y microperforados para exteriores.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-id-card"></i>
+        <h3>Tarjetas y Flyers</h3>
+        <p>Papelería corporativa con acabados premium.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-tshirt"></i>
+        <h3>Sublimación</h3>
+        <p>Personalización de tazas, playeras y más.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Centro de Impresión Digital - Hecho con GitHub Pages</p>
+</footer>
+
+</body>
+</html>
